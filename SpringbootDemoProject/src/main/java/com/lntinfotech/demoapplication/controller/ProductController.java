@@ -18,6 +18,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
+@RequestMapping("/productApp")
 @Api(value="ProductApplication")
 public class ProductController {
 
