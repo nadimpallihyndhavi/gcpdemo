@@ -12,7 +12,7 @@ COPY src /build/src/
 WORKDIR /build/
 RUN mvn package
 
-FROM openjdk:11-jre-alpine
+FROM openjdk:11-jdk-alpine
 
 WORKDIR /app
 
