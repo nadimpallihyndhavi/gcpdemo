@@ -17,6 +17,6 @@ FROM openjdk:11-jdk-slim-buster
 WORKDIR /app
 
 COPY --from=MAVEN_BUILD /build/target/Springboot-Demo-Project-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 9090
+EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
